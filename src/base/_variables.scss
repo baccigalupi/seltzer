@@ -1,0 +1,22 @@
+$tablet-break-point: 640px;
+$desktop-break-point: 960px;
+
+// fonts
+$serif-defaults: "Georgia", "Palatino Linotype", Palatino, "Book Antiqua", serif;
+$sans-defaults: "Trebuchet MS", Trebuchet, Tahoma, Geneva, sans-serif;
+
+$custom-headline-font: 'Roboto Slab';
+$custom-body-font: 'KoHo';
+
+$headline-font:   $custom-headline-font, $serif-defaults;
+$body-font:       $custom-body-font, $sans-defaults;
+$button-font:     $sans-defaults;
+
+$body-font-size: 18px;
+$line-height: 1.4;
+$normal-weight: 300;
+$bold-weight: 600;
+
+// spacing
+$spacing: round($body-font-size * 2 / 3);
+

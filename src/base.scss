@@ -1,0 +1,13 @@
+@import "base/normalize";
+@import "base/variables";
+
+@import "base/typography";
+
+// TODO: move to a sub stylesheet
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

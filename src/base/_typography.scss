@@ -1,0 +1,44 @@
+p, body {
+  font-family: $body-font;
+  font-size: $body-font-size;
+  line-height: $line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headline-font;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: $spacing;
+}
+
+h1 {
+  font-size: 1.85rem;
+  font-weight: $normal-weight;
+}
+
+h2 {
+  font-size: 1.65rem;
+  font-weight: $normal-weight;
+}
+
+h3 {
+  font-size: 1.45rem;
+  font-weight: $bold-weight;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: $bold-weight;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: $bold-weight;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: $bold-weight;
+}

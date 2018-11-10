@@ -1,0 +1,36 @@
+{
+  "name": "seltzer",
+  "version": "0.0.1",
+  "description": "Lightweight sass kit for building in modern browers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baccigalupi/seltzer.git"
+  },
+  "keywords": [
+    "sass",
+    "lightweight",
+    "modern",
+    "browsers"
+  ],
+  "author": "Kane Baccigalupi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baccigalupi/seltzer/issues"
+  },
+  "homepage": "https://github.com/baccigalupi/seltzer#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "compass-mixins": "^0.12.10",
+    "css-loader": "^1.0.1",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
