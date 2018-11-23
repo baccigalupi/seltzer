@@ -1,0 +1,177 @@
+body {
+  color: $darkest-color;
+}
+
+.background-dark {
+  background-color: $darkest-color;
+}
+
+.background-light {
+  background-color: $lightest-color;
+}
+
+.background-medium {
+  background-color: $neutral-20;
+}
+
+.text-dark {
+  color: $darkest-color;
+}
+
+.text-light {
+  color: $lightest-color;
+}
+
+.text-medium {
+  color: $neutral-60;
+}
+
+// primary
+.background-primary {
+  background-color: $primary;
+}
+
+.background-primary-dark {
+  background-color: darken($primary, 15%);
+}
+
+.background-primary-light {
+  background-color: lighten($primary, 30%);
+}
+
+.text-primary {
+  color: darken(saturate($primary, 50%), 20%);
+}
+
+.text-primary-dark {
+  color: darken(saturate($primary, 70%), 25%);
+}
+
+.text-primary-light {
+  color: lighten($primary, 10%);
+}
+
+// secondary
+.background-secondary {
+  background-color: $secondary;
+}
+
+.background-secondary-dark {
+  background-color: darken($secondary, 15%);
+}
+
+.background-secondary-light {
+  background-color: lighten($secondary, 30%);
+}
+
+.text-secondary {
+  color: darken(saturate($secondary, 20%), 20%);
+}
+
+.text-secondary-dark {
+  color: darken(saturate($secondary, 20%), 30%);
+}
+
+.text-secondary-light {
+  color: lighten($secondary, 10%);
+}
+
+// info
+.background-info {
+  background-color: $info;
+}
+
+.background-info-dark {
+  background-color: darken($info, 15%);
+}
+
+.background-info-light {
+  background-color: lighten($info, 30%);
+}
+
+.text-info {
+  color: darken(saturate($info, 50%), 20%);
+}
+
+.text-info-dark {
+  color: darken(saturate($info, 50%), 30%);
+}
+
+.text-info-light {
+  color: lighten($info, 10%);
+}
+
+// success
+.background-success {
+  background-color: $success;
+}
+
+.background-success-dark {
+  background-color: darken($success, 15%);
+}
+
+.background-success-light {
+  background-color: lighten($success, 30%);
+}
+
+.text-success {
+  color: darken(saturate($success, 80%), 20%);
+}
+
+.text-success-dark {
+  color: darken(saturate($success, 80%), 30%);
+}
+
+.text-success-light {
+  color: lighten($success, 10%);
+}
+
+// warning
+.background-warning {
+  background-color: $warning;
+}
+
+.background-warning-dark {
+  background-color: darken($warning, 15%);
+}
+
+.background-warning-light {
+  background-color: lighten($warning, 30%);
+}
+
+.text-warning {
+  color: darken(saturate($warning, 80%), 25%);
+}
+
+.text-warning-dark {
+  color: darken(saturate($warning, 80%), 30%);
+}
+
+.text-warning-light {
+  color: lighten($warning, 10%);
+}
+
+// danger
+.background-danger {
+  background-color: $danger;
+}
+
+.background-danger-dark {
+  background-color: darken($danger, 15%);
+}
+
+.background-danger-light {
+  background-color: lighten($danger, 30%);
+}
+
+.text-danger {
+  color: darken(saturate($danger, 50%), 15%);
+}
+
+.text-danger-dark {
+  color: darken(saturate($danger, 70%), 35%);
+}
+
+.text-danger-light {
+  color: lighten($danger, 10%);
+}

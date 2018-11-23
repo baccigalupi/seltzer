@@ -9,8 +9,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin-top: 0;
-  margin-bottom: $spacing;
+  margin: 0;
+  padding-bottom: $spacing;
 }
 
 h1 {
@@ -42,3 +42,16 @@ h6 {
   font-size: 1rem;
   font-weight: $bold-weight;
 }
+
+hr {
+  margin-top: 1.5 * $spacing;
+  margin-bottom: 1.5 * $spacing;
+  border: 0;
+  background-color: $neutral-20;
+  height: 1px;
+}
+
+.text-bold {
+  font-weight: $bold-weight;
+}
+

@@ -1,0 +1,20 @@
+html {
+  background-color: $background-color;
+}
+
+header, .header {
+  background-color: $header-color;
+}
+
+footer, .footer {
+  background-color: $footer-color;
+}
+
+.content {
+  background-color: $lightest-color;
+  padding: $spacing;
+}
+
+aside {
+  max-width: 300px;
+}
