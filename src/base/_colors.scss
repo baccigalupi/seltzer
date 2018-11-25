@@ -32,23 +32,23 @@ body {
 }
 
 .background-primary-dark {
-  background-color: darken($primary, 15%);
+  background-color: $primary-dark;
 }
 
 .background-primary-light {
-  background-color: lighten($primary, 30%);
+  background-color: $primary-light;
 }
 
 .text-primary {
-  color: darken(saturate($primary, 50%), 20%);
+  color: $primary-text;
 }
 
 .text-primary-dark {
-  color: darken(saturate($primary, 70%), 25%);
+  color: $primary-dark-text;
 }
 
 .text-primary-light {
-  color: lighten($primary, 10%);
+  color: $primary-light-text;
 }
 
 // secondary
@@ -57,23 +57,23 @@ body {
 }
 
 .background-secondary-dark {
-  background-color: darken($secondary, 15%);
+  background-color: $secondary-dark;
 }
 
 .background-secondary-light {
-  background-color: lighten($secondary, 30%);
+  background-color: $secondary-light;
 }
 
 .text-secondary {
-  color: darken(saturate($secondary, 20%), 20%);
+  color: $secondary-text;
 }
 
 .text-secondary-dark {
-  color: darken(saturate($secondary, 20%), 30%);
+  color: $secondary-dark-text;
 }
 
 .text-secondary-light {
-  color: lighten($secondary, 10%);
+  color: $secondary-light-text;
 }
 
 // info
@@ -82,23 +82,23 @@ body {
 }
 
 .background-info-dark {
-  background-color: darken($info, 15%);
+  background-color: $info-dark;
 }
 
 .background-info-light {
-  background-color: lighten($info, 30%);
+  background-color: $info-light;
 }
 
 .text-info {
-  color: darken(saturate($info, 50%), 20%);
+  color: $info-text;
 }
 
 .text-info-dark {
-  color: darken(saturate($info, 50%), 30%);
+  color: $info-dark-text;
 }
 
 .text-info-light {
-  color: lighten($info, 10%);
+  color: $info-light-text;
 }
 
 // success
@@ -107,23 +107,23 @@ body {
 }
 
 .background-success-dark {
-  background-color: darken($success, 15%);
+  background-color: $success-dark;
 }
 
 .background-success-light {
-  background-color: lighten($success, 30%);
+  background-color: $success-light;
 }
 
 .text-success {
-  color: darken(saturate($success, 80%), 20%);
+  color: $success-text;
 }
 
 .text-success-dark {
-  color: darken(saturate($success, 80%), 30%);
+  color: $success-dark-text;
 }
 
 .text-success-light {
-  color: lighten($success, 10%);
+  color: $success-light-text;
 }
 
 // warning
@@ -132,23 +132,23 @@ body {
 }
 
 .background-warning-dark {
-  background-color: darken($warning, 15%);
+  background-color: $warning-dark;
 }
 
 .background-warning-light {
-  background-color: lighten($warning, 30%);
+  background-color: $warning-light;
 }
 
 .text-warning {
-  color: darken(saturate($warning, 80%), 25%);
+  color: $warning-text;
 }
 
 .text-warning-dark {
-  color: darken(saturate($warning, 80%), 30%);
+  color: $warning-dark-text;
 }
 
 .text-warning-light {
-  color: lighten($warning, 10%);
+  color: $warning-light-text;
 }
 
 // danger
@@ -157,21 +157,21 @@ body {
 }
 
 .background-danger-dark {
-  background-color: darken($danger, 15%);
+  background-color: $danger-dark;
 }
 
 .background-danger-light {
-  background-color: lighten($danger, 30%);
+  background-color: $danger-light;
 }
 
 .text-danger {
-  color: darken(saturate($danger, 50%), 15%);
+  color: $danger-text;
 }
 
 .text-danger-dark {
-  color: darken(saturate($danger, 70%), 35%);
+  color: $danger-dark-text;
 }
 
 .text-danger-light {
-  color: lighten($danger, 10%);
+  color: $danger-light-text;
 }

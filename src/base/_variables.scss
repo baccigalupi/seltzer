@@ -52,15 +52,51 @@ $neutral-90: mix($lightest-color, $darkest-color, 10%);
 $neutral-95: mix($lightest-color, $darkest-color, 5%);
 
 $primary: $blue-gray;
+$primary-dark:  darken($primary, 15%);
+$primary-light: lighten($primary, 30%);
+$primary-text:       darken(saturate($primary, 50%), 20%);
+$primary-dark-text:  darken(saturate($primary, 70%), 25%);
+$primary-light-text: lighten($primary, 10%);
+
 $secondary: $neutral-50;
-$danger: $red;
-$warning: $gold;
+$secondary-dark:  darken($secondary, 15%);
+$secondary-light: lighten($secondary, 30%);
+$secondary-text:       darken(saturate($secondary, 20%), 20%);
+$secondary-dark-text:  darken(saturate($secondary, 20%), 25%);
+$secondary-light-text: lighten($secondary, 10%);
+
 $info: $teal;
+$info-dark:  darken($info, 15%);
+$info-light: lighten($info, 30%);
+$info-text:       darken(saturate($info, 50%), 20%);
+$info-dark-text:  darken(saturate($info, 50%), 30%);
+$info-light-text: lighten($info, 10%);
+
 $success: $leaf;
+$success-dark:  darken($success, 15%);
+$success-light: lighten($success, 30%);
+$success-text:       darken(saturate($success, 80%), 20%);
+$success-dark-text:  darken(saturate($success, 80%), 30%);
+$success-light-text: lighten($success, 10%);
+
+$warning: $gold;
+$warning-dark:  darken($warning, 15%);
+$warning-light: lighten($warning, 30%);
+$warning-text:       darken(saturate($warning, 80%), 25%);
+$warning-dark-text:  darken(saturate($warning, 80%), 35%);
+$warning-light-text: lighten($warning, 10%);
+
+$danger: $red;
+$danger-dark:  darken($danger, 15%);
+$danger-light: lighten($danger, 30%);
+$danger-text:       darken(saturate($danger, 50%), 15%);
+$danger-dark-text:  darken(saturate($danger, 70%), 35%);
+$danger-light-text: lighten($danger, 10%);
 
 $background-color: $lightest-color;
 $header-color: $ice-blue;
 $footer-color: $ice-blue;
 
-$color-list:
-  ("danger", $danger);
+$border-radius: 3px;
+$border-color: $neutral-20;
+$border-width: 1px;

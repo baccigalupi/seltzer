@@ -1,5 +1,13 @@
 html {
   background-color: $background-color;
+  display: grid;
+  align-items: stretch;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 header, .header {
@@ -13,8 +21,12 @@ footer, .footer {
 .content {
   background-color: $lightest-color;
   padding: $spacing;
+  flex: 1;
 }
 
-aside {
-  max-width: 300px;
+.nav ul,
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
