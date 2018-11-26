@@ -20,8 +20,7 @@ $bold-weight: 600;
 // padding and margins
 $spacing: round($body-font-size * 2 / 3);
 
-// colors
-//
+// COLORS:
 // pallete
 $white:     #FFFFFF;
 $ice-blue:  #ddfcf7;
@@ -96,7 +95,8 @@ $danger-light-text: lighten($danger, 10%);
 $background-color: $lightest-color;
 $header-color: $ice-blue;
 $footer-color: $ice-blue;
+$outline-color: $primary;
 
-$border-radius: 3px;
+$border-radius: 6px;
 $border-color: $neutral-20;
 $border-width: 1px;

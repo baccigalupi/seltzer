@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Get Seltzer - a lightweight Sass framework for modern browsers</title>
+  <meta name="viewport" content="initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/ico">
+  <link rel="stylesheet" href="seltzer.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+</head>
+<body>
+   <header class='pad-top-1 pad-x-2 row space-between align-center'>
+    <h1 class='size-stretch'>
+      Seltzer
+    </h1>
+    <button
+      onclick="(function() {var _p='https://squizlabs.github.io/HTML_CodeSniffer/build/';var _i=function(s,cb) {var sc=document.createElement('script');sc.onload = function() {sc.onload = null;sc.onreadystatechange = null;cb.call(this);};sc.onreadystatechange = function(){if(/^(complete|loaded)$/.test(this.readyState) === true){sc.onreadystatechange = null;sc.onload();}};sc.src=s;if (document.head) {document.head.appendChild(sc);} else {document.getElementsByTagName('head')[0].appendChild(sc);}}; var options={path:_p};_i(_p+'HTMLCS.js',function(){HTMLCSAuditor.run('WCAG2AA',null,options);});})();">
+      Check accessibility
+    </button>
+  </header>
+
+  <div class='row content'>
+    <aside class='size-1-5 pad-2'>
+      <nav>
+        <h2>Examples</h2>
+        <ul>
+          <li class='pad-1'>
+            <a href='index.html'>Home</a>
+          </li>
+          <li class='pad-1'>
+            <a href='typography.html'>Typography</a>
+          </li>
+          <li class='pad-1'>
+            <a href='colors.html'>Colors</a>
+          </li>
+          <li class='pad-1'>
+            <a href='form-elements.html'>Form elements</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class='size-stretch pad-1'>
+      <h2>Button styling</h2>
+      <p>Buttons, links and inputs of type "submit" can all be styled to look identical:</p>
+      <div class='row wrap'>
+        <div class='pad-right-1'>
+          <button>Button</button>
+        </div>
+        <div class='pad-right-1'>
+          <input type='submit' value='Input submit'>
+        </div>
+        <div>
+          <a href='javascript:void(0)' class='button'>Link</a>
+        </div>
+      </div>
+      <p class='pad-top-3'>
+        There are button styles for each of the semantic colors.
+        Primary is represented by the standard button styling. Classes can be added for:
+        <code>secondary</code>,
+        <code>info</code>,
+        <code>success</code>,
+        <code>warning</code>, and
+        <code>danger</code>.
+      </p>
+      <div class='row wrap'>
+        <div class='pad-right-1'>
+          <button>Standard</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='secondary'>Secondary</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='info'>Info</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='success'>Success</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='warning'>Warning</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='danger'>Danger</button>
+        </div>
+      </div>
+
+      <p class='pad-top-3'>
+        Each of these button styles has a <b>hover</b> state that is 5% lighter:
+      </p>
+
+      <div class='row wrap'>
+        <div class='pad-right-1'>
+          <button class='hover'>Standard</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='secondary hover'>Secondary</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='info hover'>Info</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='success hover'>Success</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='warning hover'>Warning</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='danger hover'>Danger</button>
+        </div>
+      </div>
+
+      <p class='pad-top-3'>
+        Focusing adds a drop-shadow to mimic an outline. It is in the same color family as the outline for non-button links.
+      </p>
+
+      <div class='row wrap'>
+        <div class='pad-right-1'>
+          <button class='focus'>Standard</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='secondary focus'>Secondary</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='info focus'>Info</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='success focus'>Success</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='warning focus'>Warning</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='danger focus'>Danger</button>
+        </div>
+      </div>
+
+      <p class='pad-top-3'>
+        Active is slightly darker than the base color, and also has a focus shadow.
+      </p>
+
+      <div class='row wrap'>
+        <div class='pad-right-1'>
+          <button class='active'>Standard</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='secondary active'>Secondary</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='info active'>Info</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='success active'>Success</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='warning active'>Warning</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='danger active'>Danger</button>
+        </div>
+      </div>
+
+      <p class='pad-top-3'>
+        Disabled buttons change their pointer and desaturate their background color.
+      </p>
+
+      <div class='row wrap'>
+        <div class='pad-right-1'>
+          <button disabled>Standard</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='secondary' disabled>Secondary</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='info' disabled>Info</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='success' disabled>Success</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='warning' disabled>Warning</button>
+        </div>
+        <div class='pad-right-1'>
+          <button class='danger' disabled>Danger</button>
+        </div>
+      </div>
+
+      <hr class='pad-top-3' />
+
+      <h2 class='pad-top-2'>
+        Inputs
+      </p>
+
+      <div class='row wrap'>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p class='pad-1'>footer</p>
+  </footer>
+</body>
+
+

@@ -18,8 +18,24 @@ html {
     justify-content: space-between;
   }
 
+  &.space-around {
+    justify-content: space-around;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
   &.align-center {
     align-items: center;
+  }
+
+  &.align-top {
+    align-items: flex-top;
+  }
+
+  &.align-bottom {
+    align-items: flex-bottom;
   }
 }
 
