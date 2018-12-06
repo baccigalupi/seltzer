@@ -6,12 +6,17 @@ p, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font;
+  padding: 0;
+  margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+p {
+  padding: 0;
   margin: 0;
   padding-bottom: $spacing;
+  padding-top: $spacing / 2;
 }
+
 
 h1 {
   font-size: 2rem;

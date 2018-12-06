@@ -1,0 +1,17 @@
+label {
+  display: block;
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+  font-weight: $bold-weight;
+}
+
+input {
+  padding: $spacing;
+  border-radius: $border-radius;
+  width: 100%;
+}
+
+.help-text {
+  font-size: 1rem;
+  color: $neutral-60;
+}

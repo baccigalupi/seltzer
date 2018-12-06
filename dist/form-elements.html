@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
 </head>
 <body>
-   <header class='pad-top-1 pad-x-2 row space-between align-center'>
+   <header class='pad-y-1 pad-x-2 row space-between align-center'>
     <h1 class='size-stretch'>
       Seltzer
     </h1>
@@ -21,7 +21,7 @@
   </header>
 
   <div class='row content'>
-    <aside class='size-1-5 pad-2'>
+    <aside class='size-1-5 pad-1'>
       <nav>
         <h2>Examples</h2>
         <ul>
@@ -189,10 +189,62 @@
 
       <h2 class='pad-top-2'>
         Inputs
+      </h2>
+
+      <p>
+        Inputs and labels are block elements.
+        They grow like goldfish to fill the container where they live.
+        So create containers of the right size in a row, and fill each with a
+        label and input.
       </p>
 
-      <div class='row wrap'>
-      </div>
+      <form>
+        <div class='row wrap'>
+          <div class='size-1-5 pad-right-1'>
+            <label for='input_text'>Label for text</label>
+            <input id='input_text' name='input_text' type='text' placeholder='Text input'>
+          </div>
+
+          <div class='size-2-5 pad-right-1'>
+            <label for='input_text_2'>I'm in a 2/5th width container</label>
+            <input id='input_text_2' name='input_text' type='text' placeholder='Text input'>
+          </div>
+          <div class='size-3-5 pad-right-1'>
+            <label for='input_text_3'>3/5ths width container</label>
+            <input id='input_text_3' name='input_text' type='text' placeholder='Text input'>
+          </div>
+        </div>
+        <button disabled>Save</button>
+      </form>
+
+      <hr class='pad-top-3'>
+
+      <p class='pad-top-1'>
+        Help text under the label just works:
+      </p>
+
+      <form class='row wrap'>
+        <div class='size-1-5 pad-right-1'>
+          <label for='first_name'>First name</label>
+          <input id='first_name' name='first_name' type='text'>
+          <p class='help-text'>Legal name only</p>
+        </div>
+
+        <div class='size-2-5 pad-right-1'>
+          <label for='input_text_2'>I'm in a 2/5th width container</label>
+          <input id='input_text_2' name='input_text' type='text' placeholder='Text input'>
+        </div>
+
+        <div class='size-3-5 pad-right-1'>
+          <label for='location'>Location</label>
+          <input id='location' name='location' type='text'>
+          <p class='help-text'>Find your geolocation and enter it here</p>
+        </div>
+      </form>
+
+      <p class='pad-top-3'>
+        Validations errors happen. An error class can be added to the bounding container to highlight the content
+      </p>
     </section>
   </div>
 
