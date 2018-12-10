@@ -3,7 +3,8 @@ body {
 
   a:focus,
   a.focus {
-    outline-color: $outline-color;
+    @include focus-outline();
+    //outline-color: $outline-color;
   }
 }
 

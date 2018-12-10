@@ -9,10 +9,10 @@ $custom-headline-font: 'Roboto Slab';
 $custom-body-font: 'KoHo';
 
 $headline-font:   $custom-headline-font, $serif-defaults;
-$body-font:       $custom-body-font, $sans-defaults;
+$body-font:       $sans-defaults;
 $button-font:     $sans-defaults;
 
-$body-font-size: 18px;
+$body-font-size: 17px;
 $line-height: 1.4;
 $normal-weight: 300;
 $bold-weight: 600;
@@ -100,3 +100,12 @@ $outline-color: $primary;
 $border-radius: 6px;
 $border-color: $neutral-20;
 $border-width: 1px;
+$input-border-width: 2px;
+$input-border-style: inset;
+$focus-offset: -3px;
+$focus-width: 5px;
+
+@mixin focus-outline() {
+  outline: $focus-width auto $outline-color;
+  outline-offset: $focus-offset;
+}

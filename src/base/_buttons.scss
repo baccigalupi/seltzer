@@ -27,12 +27,12 @@ a.btn {
   &:active,
   &.active {
     background-color: darken($primary-dark, 10%);
-    box-shadow: 0px 0px 10px darken($outline-color, 10%);
+    @include focus-outline();
   }
 
   &:focus,
   &.focus {
-    box-shadow: 0px 0px 10px darken($outline-color, 30%);
+    @include focus-outline();
   }
 
   &[disabled],

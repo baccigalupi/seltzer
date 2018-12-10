@@ -5,13 +5,49 @@ label {
   font-weight: $bold-weight;
 }
 
-input {
+input,
+input:required,
+textarea {
+  color: $darkest-color;
+  width: 100%;
   padding: $spacing;
   border-radius: $border-radius;
-  width: 100%;
+  border-width: $input-border-width;
+  border-style: $input-border-style;
+
+  &:focus {
+    @include focus-outline();
+  }
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.4;
 }
 
 .help-text {
   font-size: 1rem;
   color: $neutral-60;
 }
+
+form.error,
+form .error {
+  input,
+  &input,
+  textarea,
+  &textarea {
+    border-color: $danger;
+  }
+
+  .help-text,
+  &.help-text,
+  label,
+  &label {
+    color: $danger-text;
+  }
+}
+
+input:required:invalid {
+  border-color: $danger;
+}
+

@@ -55,7 +55,7 @@
           <a href='javascript:void(0)' class='button'>Link</a>
         </div>
       </div>
-      <p class='pad-top-3'>
+      <p class='margin-top-3'>
         There are button styles for each of the semantic colors.
         Primary is represented by the standard button styling. Classes can be added for:
         <code>secondary</code>,
@@ -85,7 +85,7 @@
         </div>
       </div>
 
-      <p class='pad-top-3'>
+      <p class='margin-top-3'>
         Each of these button styles has a <b>hover</b> state that is 5% lighter:
       </p>
 
@@ -110,7 +110,7 @@
         </div>
       </div>
 
-      <p class='pad-top-3'>
+      <p class='margin-top-3'>
         Focusing adds a drop-shadow to mimic an outline. It is in the same color family as the outline for non-button links.
       </p>
 
@@ -135,7 +135,7 @@
         </div>
       </div>
 
-      <p class='pad-top-3'>
+      <p class='margin-top-3'>
         Active is slightly darker than the base color, and also has a focus shadow.
       </p>
 
@@ -160,7 +160,7 @@
         </div>
       </div>
 
-      <p class='pad-top-3'>
+      <p class='margin-top-3'>
         Disabled buttons change their pointer and desaturate their background color.
       </p>
 
@@ -185,9 +185,9 @@
         </div>
       </div>
 
-      <hr class='pad-top-3' />
+      <hr class='margin-top-3' />
 
-      <h2 class='pad-top-2'>
+      <h2 class='margin-top-2'>
         Inputs
       </h2>
 
@@ -214,37 +214,94 @@
             <input id='input_text_3' name='input_text' type='text' placeholder='Text input'>
           </div>
         </div>
-        <button disabled>Save</button>
+        <button disabled class='margin-y-2'>Save</button>
       </form>
 
-      <hr class='pad-top-3'>
+      <hr class='margin-top-3'>
 
-      <p class='pad-top-1'>
+      <p class='margin-top-1'>
         Help text under the label just works:
       </p>
 
-      <form class='row wrap'>
-        <div class='size-1-5 pad-right-1'>
-          <label for='first_name'>First name</label>
-          <input id='first_name' name='first_name' type='text'>
-          <p class='help-text'>Legal name only</p>
-        </div>
+      <form>
+        <div class='row wrap'>
+          <div class='size-1-5 pad-right-1'>
+            <label for='first_name'>First name</label>
+            <input id='first_name' name='first_name' type='text'>
+            <p class='help-text'>Legal name only</p>
+          </div>
 
-        <div class='size-2-5 pad-right-1'>
-          <label for='input_text_2'>I'm in a 2/5th width container</label>
-          <input id='input_text_2' name='input_text' type='text' placeholder='Text input'>
-        </div>
+          <div class='size-2-5 pad-right-1'>
+            <label for='last_name'>Last Name</label>
+            <input id='last_name' name='last_name' type='text'>
+          </div>
 
-        <div class='size-3-5 pad-right-1'>
-          <label for='location'>Location</label>
-          <input id='location' name='location' type='text'>
-          <p class='help-text'>Find your geolocation and enter it here</p>
+          <div class='size-3-5 pad-right-1'>
+            <label for='location'>Location</label>
+            <input id='location' name='location' type='text'>
+            <p class='help-text'>Find your geolocation and enter it here</p>
+          </div>
         </div>
+        <button disabled class='margin-y-1'>Save</button>
       </form>
 
-      <p class='pad-top-3'>
-        Validations errors happen. An error class can be added to the bounding container to highlight the content
+      <p class='margin-top-3'>
+        Validations errors happen. An error class can be added to the bounding container, which changes the styling
+        of the label help text and input border of that container.
       </p>
+
+      <p>
+        The <code>error</code> class can also be put on individual items within a form.
+      </p>
+
+      <form>
+        <div class='row wrap'>
+          <div class='size-1-5 pad-right-1 error'>
+            <label for='first_name_2'>First name</label>
+            <input id='first_name_2' name='first_name_2' type='text' value=''>
+            <p class='help-text'>Must not be blank</p>
+          </div>
+
+          <div class='size-2-5 pad-right-1'>
+            <label for='last_name_2'>Last Name</label>
+            <input id='last_name_2' name='last_name_2' type='text' required>
+          </div>
+
+          <div class='size-3-5 pad-right-1'>
+            <label for='location_2'>Location</label>
+            <input id='location_2' name='location_2' type='text'>
+            <p class='help-text error'>Please enter a location</p>
+          </div>
+        </div>
+        <button disabled class='margin-y-1'>Save</button>
+      </form>
+
+      <p>
+        There are a wide variety of built in input; this is what they look like in seltzer:
+      </p>
+
+      <form>
+        <div class='row wrap'>
+          <div class='size-1-5 pad-right-1'>
+            <label for='text-area'>Text area</label>
+            <textarea id='text-area' rows='5' name='text-area'>I am only resizable in the vertical direction. That prevents me from exceeding my container.</textarea>
+          </div>
+
+          <div class='size-2-5 pad-right-1'>
+            <label for='last_name_2'>Last Name</label>
+            <input id='last_name_2' name='last_name_2' type='text'>
+          </div>
+
+          <div class='size-3-5 pad-right-1'>
+            <label for='location_2'>Location</label>
+            <input id='location_2' name='location_2' type='text'>
+            <p class='help-text error'>Please enter a location</p>
+          </div>
+        </div>
+        <button disabled class='margin-y-1'>Save</button>
+      </form>
+
+
     </section>
   </div>
 
