@@ -7,7 +7,6 @@ a.btn {
   border: none;
   background-color: $primary-dark;
   color: $lightest-color;
-  outline: none;
 
   padding: $spacing;
   font-weight: $bold-weight;
@@ -27,12 +26,12 @@ a.btn {
   &:active,
   &.active {
     background-color: darken($primary-dark, 10%);
-    @include focus-outline();
+    @include button-focus-outline();
   }
 
   &:focus,
   &.focus {
-    @include focus-outline();
+    @include button-focus-outline();
   }
 
   &[disabled],
@@ -119,5 +118,20 @@ a.btn {
     &.focus {
       background-color: lighten($danger, 10%);
     }
+  }
+}
+
+input[type=reset],
+button.neutral,
+.btn.neutral,
+.btn.btn-neutral {
+  background-color: $neutral-60;
+  width: auto;
+
+  &:enabled:hover,
+  &:enabled.hover,
+  &:focus,
+  &.focus {
+    background-color: $neutral-50;
   }
 }

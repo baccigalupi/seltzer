@@ -16,7 +16,7 @@ textarea {
   border-style: $input-border-style;
 
   &:focus {
-    @include focus-outline();
+    @include button-focus-outline();
   }
 }
 

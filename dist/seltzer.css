@@ -303,6 +303,13 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  color: #111829; }
+  body a:focus,
+  body a.focus {
+    outline: 5px auto #8bced0;
+    outline-offset: 3px; }
+
 p, body {
   font-family: "Trebuchet MS", Trebuchet, Tahoma, Geneva, sans-serif;
   font-size: 17px;
@@ -371,13 +378,6 @@ a:visited {
   color: #445372; }
   a:visited:hover, a:visited:active {
     color: #3a4862; }
-
-body {
-  color: #111829; }
-  body a:focus,
-  body a.focus {
-    outline: 5px auto #678FC2;
-    outline-offset: -3px; }
 
 .background-dark {
   background-color: #111829 !important; }
@@ -816,7 +816,6 @@ a.btn {
   border: none;
   background-color: #3f699d;
   color: #FFFFFF;
-  outline: none;
   padding: 11px;
   font-weight: 600;
   line-height: 1;
@@ -845,7 +844,7 @@ a.btn {
   a.btn:active,
   a.btn.active {
     background-color: #315079;
-    outline: 5px auto #678FC2;
+    outline: 5px auto #8bced0;
     outline-offset: -3px; }
   input[type=submit]:focus, input[type=submit].focus,
   input[type=reset]:focus,
@@ -856,7 +855,7 @@ a.btn {
   a.button.focus,
   a.btn:focus,
   a.btn.focus {
-    outline: 5px auto #678FC2;
+    outline: 5px auto #8bced0;
     outline-offset: -3px; }
   input[type=submit][disabled], input[type=submit].disabled,
   input[type=reset][disabled],
@@ -1105,6 +1104,27 @@ a.btn {
     a.btn.danger.focus {
       background-color: #d2866a; }
 
+input[type=reset],
+button.neutral,
+.btn.neutral,
+.btn.btn-neutral {
+  background-color: #70747f;
+  width: auto; }
+  input[type=reset]:enabled:hover, input[type=reset]:enabled.hover, input[type=reset]:focus, input[type=reset].focus,
+  button.neutral:enabled:hover,
+  button.neutral:enabled.hover,
+  button.neutral:focus,
+  button.neutral.focus,
+  .btn.neutral:enabled:hover,
+  .btn.neutral:enabled.hover,
+  .btn.neutral:focus,
+  .btn.neutral.focus,
+  .btn.btn-neutral:enabled:hover,
+  .btn.btn-neutral:enabled.hover,
+  .btn.btn-neutral:focus,
+  .btn.btn-neutral.focus {
+    background-color: #888c94; }
+
 label {
   display: block;
   padding-top: 11px;
@@ -1123,7 +1143,7 @@ textarea {
   input:focus,
   input:required:focus,
   textarea:focus {
-    outline: 5px auto #678FC2;
+    outline: 5px auto #8bced0;
     outline-offset: -3px; }
 
 textarea {

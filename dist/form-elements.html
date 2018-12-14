@@ -287,18 +287,22 @@
             <textarea id='text-area' rows='5' name='text-area'>I am only resizable in the vertical direction. That prevents me from exceeding my container.</textarea>
           </div>
 
-          <div class='size-2-5 pad-right-1'>
-            <label for='last_name_2'>Last Name</label>
-            <input id='last_name_2' name='last_name_2' type='text'>
+          <div class='size-1-5 pad-right-1'>
+            <label for='password'>Password</label>
+            <input id='password' name='password' type='password' value='password'>
           </div>
 
-          <div class='size-3-5 pad-right-1'>
-            <label for='location_2'>Location</label>
-            <input id='location_2' name='location_2' type='text'>
-            <p class='help-text error'>Please enter a location</p>
+          <div class='size-1-5 pad-right-1'>
+            <label for='color'>Color</label>
+            <input id='color' name='color' type='color' value='#F53'>
           </div>
         </div>
-        <button disabled class='margin-y-1'>Save</button>
+        <div class='row'>
+          <div class='pad-right-1'>
+            <input type='reset' value='Cancel' disabled />
+          </div>
+          <button disabled>Save</button>
+        </div>
       </form>
 
 

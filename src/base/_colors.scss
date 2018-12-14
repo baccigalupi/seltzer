@@ -1,13 +1,3 @@
-body {
-  color: $darkest-color;
-
-  a:focus,
-  a.focus {
-    @include focus-outline();
-    //outline-color: $outline-color;
-  }
-}
-
 .background-dark {
   background-color: $darkest-color !important;
 }
