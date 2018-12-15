@@ -307,8 +307,8 @@ body {
   color: #111829; }
   body a:focus,
   body a.focus {
-    outline: 5px auto #8bced0;
-    outline-offset: 3px; }
+    outline: none;
+    box-shadow: 0 0 10px #39A0A8; }
 
 p, body {
   font-family: "Trebuchet MS", Trebuchet, Tahoma, Geneva, sans-serif;
@@ -809,10 +809,12 @@ html {
 
 input[type=submit],
 input[type=reset],
+input[type=button],
 button,
 a.button,
 a.btn {
   display: inline-block;
+  width: auto;
   border: none;
   background-color: #3f699d;
   color: #FFFFFF;
@@ -827,6 +829,8 @@ a.btn {
   input[type=submit]:enabled:hover, input[type=submit]:enabled.hover,
   input[type=reset]:enabled:hover,
   input[type=reset]:enabled.hover,
+  input[type=button]:enabled:hover,
+  input[type=button]:enabled.hover,
   button:enabled:hover,
   button:enabled.hover,
   a.button:enabled:hover,
@@ -837,6 +841,8 @@ a.btn {
   input[type=submit]:active, input[type=submit].active,
   input[type=reset]:active,
   input[type=reset].active,
+  input[type=button]:active,
+  input[type=button].active,
   button:active,
   button.active,
   a.button:active,
@@ -844,22 +850,26 @@ a.btn {
   a.btn:active,
   a.btn.active {
     background-color: #315079;
-    outline: 5px auto #8bced0;
-    outline-offset: -3px; }
+    outline: none;
+    box-shadow: 0 0 10px #2c7c82; }
   input[type=submit]:focus, input[type=submit].focus,
   input[type=reset]:focus,
   input[type=reset].focus,
+  input[type=button]:focus,
+  input[type=button].focus,
   button:focus,
   button.focus,
   a.button:focus,
   a.button.focus,
   a.btn:focus,
   a.btn.focus {
-    outline: 5px auto #8bced0;
-    outline-offset: -3px; }
+    outline: none;
+    box-shadow: 0 0 10px #2c7c82; }
   input[type=submit][disabled], input[type=submit].disabled,
   input[type=reset][disabled],
   input[type=reset].disabled,
+  input[type=button][disabled],
+  input[type=button].disabled,
   button[disabled],
   button.disabled,
   a.button[disabled],
@@ -871,6 +881,8 @@ a.btn {
   input[type=submit] .btn-secondary, input[type=submit].secondary,
   input[type=reset] .btn-secondary,
   input[type=reset].secondary,
+  input[type=button] .btn-secondary,
+  input[type=button].secondary,
   button .btn-secondary,
   button.secondary,
   a.button .btn-secondary,
@@ -884,6 +896,10 @@ a.btn {
     input[type=reset] .btn-secondary:enabled.hover,
     input[type=reset].secondary:enabled:hover,
     input[type=reset].secondary:enabled.hover,
+    input[type=button] .btn-secondary:enabled:hover,
+    input[type=button] .btn-secondary:enabled.hover,
+    input[type=button].secondary:enabled:hover,
+    input[type=button].secondary:enabled.hover,
     button .btn-secondary:enabled:hover,
     button .btn-secondary:enabled.hover,
     button.secondary:enabled:hover,
@@ -902,6 +918,10 @@ a.btn {
     input[type=reset] .btn-secondary.focus,
     input[type=reset].secondary:focus,
     input[type=reset].secondary.focus,
+    input[type=button] .btn-secondary:focus,
+    input[type=button] .btn-secondary.focus,
+    input[type=button].secondary:focus,
+    input[type=button].secondary.focus,
     button .btn-secondary:focus,
     button .btn-secondary.focus,
     button.secondary:focus,
@@ -918,6 +938,8 @@ a.btn {
   input[type=submit] .btn-info, input[type=submit].info,
   input[type=reset] .btn-info,
   input[type=reset].info,
+  input[type=button] .btn-info,
+  input[type=button].info,
   button .btn-info,
   button.info,
   a.button .btn-info,
@@ -931,6 +953,10 @@ a.btn {
     input[type=reset] .btn-info:enabled.hover,
     input[type=reset].info:enabled:hover,
     input[type=reset].info:enabled.hover,
+    input[type=button] .btn-info:enabled:hover,
+    input[type=button] .btn-info:enabled.hover,
+    input[type=button].info:enabled:hover,
+    input[type=button].info:enabled.hover,
     button .btn-info:enabled:hover,
     button .btn-info:enabled.hover,
     button.info:enabled:hover,
@@ -949,6 +975,10 @@ a.btn {
     input[type=reset] .btn-info.focus,
     input[type=reset].info:focus,
     input[type=reset].info.focus,
+    input[type=button] .btn-info:focus,
+    input[type=button] .btn-info.focus,
+    input[type=button].info:focus,
+    input[type=button].info.focus,
     button .btn-info:focus,
     button .btn-info.focus,
     button.info:focus,
@@ -965,6 +995,8 @@ a.btn {
   input[type=submit] .btn-success, input[type=submit].success,
   input[type=reset] .btn-success,
   input[type=reset].success,
+  input[type=button] .btn-success,
+  input[type=button].success,
   button .btn-success,
   button.success,
   a.button .btn-success,
@@ -978,6 +1010,10 @@ a.btn {
     input[type=reset] .btn-success.hover,
     input[type=reset].success:enabled:hover,
     input[type=reset].success.hover,
+    input[type=button] .btn-success:enabled:hover,
+    input[type=button] .btn-success.hover,
+    input[type=button].success:enabled:hover,
+    input[type=button].success.hover,
     button .btn-success:enabled:hover,
     button .btn-success.hover,
     button.success:enabled:hover,
@@ -996,6 +1032,10 @@ a.btn {
     input[type=reset] .btn-success.focus,
     input[type=reset].success:enabled:focus,
     input[type=reset].success.focus,
+    input[type=button] .btn-success:enabled:focus,
+    input[type=button] .btn-success.focus,
+    input[type=button].success:enabled:focus,
+    input[type=button].success.focus,
     button .btn-success:enabled:focus,
     button .btn-success.focus,
     button.success:enabled:focus,
@@ -1012,6 +1052,8 @@ a.btn {
   input[type=submit] .btn-warning, input[type=submit].warning,
   input[type=reset] .btn-warning,
   input[type=reset].warning,
+  input[type=button] .btn-warning,
+  input[type=button].warning,
   button .btn-warning,
   button.warning,
   a.button .btn-warning,
@@ -1025,6 +1067,10 @@ a.btn {
     input[type=reset] .btn-warning:enabled.hover,
     input[type=reset].warning:enabled:hover,
     input[type=reset].warning:enabled.hover,
+    input[type=button] .btn-warning:enabled:hover,
+    input[type=button] .btn-warning:enabled.hover,
+    input[type=button].warning:enabled:hover,
+    input[type=button].warning:enabled.hover,
     button .btn-warning:enabled:hover,
     button .btn-warning:enabled.hover,
     button.warning:enabled:hover,
@@ -1043,6 +1089,10 @@ a.btn {
     input[type=reset] .btn-warning.focus,
     input[type=reset].warning:focus,
     input[type=reset].warning.focus,
+    input[type=button] .btn-warning:focus,
+    input[type=button] .btn-warning.focus,
+    input[type=button].warning:focus,
+    input[type=button].warning.focus,
     button .btn-warning:focus,
     button .btn-warning.focus,
     button.warning:focus,
@@ -1059,6 +1109,8 @@ a.btn {
   input[type=submit] .btn-danger, input[type=submit].danger,
   input[type=reset] .btn-danger,
   input[type=reset].danger,
+  input[type=button] .btn-danger,
+  input[type=button].danger,
   button .btn-danger,
   button.danger,
   a.button .btn-danger,
@@ -1072,6 +1124,10 @@ a.btn {
     input[type=reset] .btn-danger:enabled.hover,
     input[type=reset].danger:enabled:hover,
     input[type=reset].danger:enabled.hover,
+    input[type=button] .btn-danger:enabled:hover,
+    input[type=button] .btn-danger:enabled.hover,
+    input[type=button].danger:enabled:hover,
+    input[type=button].danger:enabled.hover,
     button .btn-danger:enabled:hover,
     button .btn-danger:enabled.hover,
     button.danger:enabled:hover,
@@ -1090,6 +1146,10 @@ a.btn {
     input[type=reset] .btn-danger.focus,
     input[type=reset].danger:focus,
     input[type=reset].danger.focus,
+    input[type=button] .btn-danger:focus,
+    input[type=button] .btn-danger.focus,
+    input[type=button].danger:focus,
+    input[type=button].danger.focus,
     button .btn-danger:focus,
     button .btn-danger.focus,
     button.danger:focus,
@@ -1138,48 +1198,69 @@ textarea {
   color: #111829;
   width: 100%;
   padding: 11px;
-  border-color: #cfd1d4;
-  border-radius: 6px;
   border-width: 2px;
   border-style: solid;
-  border-top-color: #70747f;
-  border-left-color: #70747f; }
+  border-radius: 6px;
+  border-color: #cfd1d4;
+  border-top-color: #7e848c;
+  border-left-color: #7e848c; }
   input:focus,
   input:required:focus,
   textarea:focus {
-    outline: 5px auto #8bced0;
-    outline-offset: -3px; }
+    outline: none;
+    box-shadow: 0 0 10px #2c7c82; }
 
 input[type=color] {
   padding: 3px 4px;
   height: 45px; }
 
+input[type=date],
+input[type=time],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=range] {
+  height: 45px; }
+
+input[type=range] {
+  border: none;
+  padding-left: 0;
+  padding-right: 0; }
+
 textarea {
   resize: vertical;
+  height: auto;
   line-height: 1.4; }
 
 .help-text {
   font-size: 1rem;
   color: #70747f; }
 
-form.error input, form.errorinput,
-form.error textarea, form.errortextarea,
-form .error input,
-form .errorinput,
-form .error textarea,
-form .errortextarea {
-  border-color: #C66643; }
+.error input,
+.error textarea {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #C66643;
+  border-top-color: #562a1a;
+  border-left-color: #562a1a; }
 
-form.error .help-text, form.error.help-text,
-form.error label, form.errorlabel,
-form .error .help-text,
-form .error.help-text,
-form .error label,
-form .errorlabel {
+.error .help-text,
+.error label {
   color: #bd3200; }
 
-input:required:invalid {
-  border-color: #C66643; }
+input.error,
+textarea.error {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #C66643;
+  border-top-color: #562a1a;
+  border-left-color: #562a1a; }
+
+label.error,
+.help-text.error {
+  color: #bd3200; }
 
 /* 
 .block {

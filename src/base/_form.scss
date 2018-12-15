@@ -12,26 +12,38 @@ textarea {
   color: $darkest-color;
   width: 100%;
   padding: $spacing;
-  border-color: $neutral-20;
-  border-radius: $border-radius;
-  border-width: $input-border-width;
-
-  border-style: solid;
-  border-top-color: $neutral-60;
-  border-left-color: $neutral-60;
+  @include inset-border-style($neutral-20)
 
   &:focus {
     @include button-focus-outline();
   }
 }
 
+$standard-input-height: floor($body-font-size * 1.25) + $spacing * 2 + $border-width * 2;
+
 input[type=color] {
   padding: round($spacing/ 4) round($spacing / 3);
-  height: floor($body-font-size * 1.25) + $spacing * 2 + $border-width * 2;
+  height: $standard-input-height;
+}
+
+input[type=date],
+input[type=time],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=range] {
+  height: $standard-input-height;
+}
+
+input[type=range] {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 textarea {
   resize: vertical;
+  height: auto;
   line-height: 1.4;
 }
 
@@ -40,24 +52,24 @@ textarea {
   color: $neutral-60;
 }
 
-form.error,
-form .error {
+.error {
   input,
-  &input,
-  textarea,
-  &textarea {
-    border-color: $danger;
+  textarea {
+    @include inset-border-style($danger)
   }
 
   .help-text,
-  &.help-text,
-  label,
-  &label {
+  label {
     color: $danger-text;
   }
 }
 
-input:required:invalid {
-  border-color: $danger;
+input.error,
+textarea.error {
+  @include inset-border-style($danger)
 }
 
+label.error,
+.help-text.error {
+  color: $danger-text;
+}

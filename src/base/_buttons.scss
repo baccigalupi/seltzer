@@ -1,9 +1,11 @@
 input[type=submit],
 input[type=reset],
+input[type=button],
 button,
 a.button,
 a.btn {
   display: inline-block;
+  width: auto;
   border: none;
   background-color: $primary-dark;
   color: $lightest-color;

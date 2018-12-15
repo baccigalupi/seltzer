@@ -95,23 +95,34 @@ $danger-light-text: lighten($danger, 10%);
 $background-color: $lightest-color;
 $header-color: $ice-blue;
 $footer-color: $ice-blue;
-$focus-color: mix($teal, $ice-blue, 50%);
+$focus-color: $teal;
 
 $border-radius: 6px;
 $border-color: $neutral-20;
 $border-width: 1px;
 $input-border-width: 2px;
 $input-border-style: solid;
-$button-focus-offset: -3px;
+$button-focus-offset: 3px;
 $link-focus-offset: 3px;
-$focus-width: 5px;
+$focus-width: 10px;
 
 @mixin button-focus-outline() {
-  outline: $focus-width auto $focus-color;
-  outline-offset: $button-focus-offset;
+  outline: none;
+  box-shadow: 0 0 $focus-width darken($focus-color, 10%);
 }
 
 @mixin link-focus-outline() {
-  outline: $focus-width auto $focus-color;
-  outline-offset: $link-focus-offset;
+  outline: none;
+  box-shadow: 0 0 $focus-width $focus-color;
 }
+
+@mixin inset-border-style($base-color) {
+  border-width: $input-border-width;
+  border-style: solid;
+  border-radius: $border-radius;
+
+  border-color: $base-color;
+  border-top-color: darken($base-color, 30%);
+  border-left-color: darken($base-color, 30%);
+}
+
