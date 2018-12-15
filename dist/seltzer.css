@@ -1201,9 +1201,7 @@ textarea {
   border-width: 2px;
   border-style: solid;
   border-radius: 6px;
-  border-color: #cfd1d4;
-  border-top-color: #7e848c;
-  border-left-color: #7e848c; }
+  border-color: #a0a3a9; }
   input:focus,
   input:required:focus,
   textarea:focus {
@@ -1241,9 +1239,7 @@ textarea {
   border-width: 2px;
   border-style: solid;
   border-radius: 6px;
-  border-color: #C66643;
-  border-top-color: #562a1a;
-  border-left-color: #562a1a; }
+  border-color: #C66643; }
 
 .error .help-text,
 .error label {
@@ -1254,9 +1250,7 @@ textarea.error {
   border-width: 2px;
   border-style: solid;
   border-radius: 6px;
-  border-color: #C66643;
-  border-top-color: #562a1a;
-  border-left-color: #562a1a; }
+  border-color: #C66643; }
 
 label.error,
 .help-text.error {

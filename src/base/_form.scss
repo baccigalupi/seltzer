@@ -12,7 +12,8 @@ textarea {
   color: $darkest-color;
   width: 100%;
   padding: $spacing;
-  @include inset-border-style($neutral-20)
+  //@include inset-border-style($neutral-20)
+  @include outline-border-style($neutral-40);
 
   &:focus {
     @include button-focus-outline();
@@ -55,7 +56,8 @@ textarea {
 .error {
   input,
   textarea {
-    @include inset-border-style($danger)
+    @include outline-border-style($danger);
+    //@include inset-border-style($danger)
   }
 
   .help-text,
@@ -66,7 +68,8 @@ textarea {
 
 input.error,
 textarea.error {
-  @include inset-border-style($danger)
+  @include outline-border-style($danger);
+  //@include inset-border-style($danger)
 }
 
 label.error,
