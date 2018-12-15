@@ -1134,17 +1134,25 @@ label {
 input,
 input:required,
 textarea {
+  display: block;
   color: #111829;
   width: 100%;
   padding: 11px;
+  border-color: #cfd1d4;
   border-radius: 6px;
   border-width: 2px;
-  border-style: inset; }
+  border-style: solid;
+  border-top-color: #70747f;
+  border-left-color: #70747f; }
   input:focus,
   input:required:focus,
   textarea:focus {
     outline: 5px auto #8bced0;
     outline-offset: -3px; }
+
+input[type=color] {
+  padding: 3px 4px;
+  height: 45px; }
 
 textarea {
   resize: vertical;
