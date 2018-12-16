@@ -1,16 +1,14 @@
-/* 
-.block {
-  @include line;
-}
-
-.hidden {
-  display: none;
-}
-
 .overflow {
   overflow: visible;
 }
-*/
+
+.overflow-x {
+  overflow-x: visible;
+}
+
+.overflow-y {
+  overflow-y: visible;
+}
 
 .no-overflow,
 .no-scroll {
@@ -31,7 +29,6 @@
   cursor: pointer;
 }
 
-
 .rounded {
   border-radius: $border-radius;
 }
@@ -41,35 +38,17 @@
 }
 
 
-/*
-.centered-content {
-  text-align: center;
-}
-
-.centerable {
-  display: inline-block;
-}
-
-
-
-.shadow-container {
-  @include line;
-  padding-right: $shadow-padding;
-  padding-bottom: $shadow-padding;
-}
-
-.shadow {
-  @include shadowed;
-}
+//.shadow {
+  //@include shadowed;
+//}
 
 .transparent {
-  @include opacity(0);
+  opacity: 0;
 }
 
 .opaque {
-  @include opacity(1);
+  opacity: 1;
 }
-*/
 
 .border {
   border-left: $border-width solid $border-color;
@@ -100,15 +79,15 @@
 
 
 // text styles
-/*
-.wrap {
-  @include word-break(break-all);
+.wrap-text {
+  word-break: break-all;
 }
 
-.no-wrap {
+.no-wrap-text {
   white-space: nowrap;
 }
 
+/* 
 .text-shadow {
   @include text-shadowed;
 }

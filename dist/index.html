@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
 </head>
 <body>
-   <header class='pad-top-1 pad-x-2 row space-between align-center'>
+  <header class='pad-y-1 pad-x-2 row space-between align-center'>
     <h1 class='size-stretch'>
       Seltzer
     </h1>
@@ -20,8 +20,25 @@
     </button>
   </header>
 
+  <nav class='m-visible hidden pad-x-2 pad-y-1 border-bottom'>
+    <ul class='row'>
+      <li class='pad-right-1'>
+        <a href='index.html'>Home</a>
+      </li>
+      <li class='pad-right-1'>
+        <a href='typography.html'>Typography</a>
+      </li>
+      <li class='pad-right-1'>
+        <a href='colors.html'>Colors</a>
+      </li>
+      <li class='pad-right-1'>
+        <a href='form-elements.html'>Form elements</a>
+      </li>
+    </ul>
+  </nav>
+
   <div class='row content'>
-    <aside class='size-1-5 pad-1'>
+    <aside class='m-hidden size-1-5 t-size-1-4 pad-1'>
       <nav>
         <h2>Examples</h2>
         <ul>
@@ -42,19 +59,41 @@
     </aside>
 
     <section class='size-stretch pad-1'>
-      <h1>Love your responsive layout</h1>
+      <h1 class='margin-bottom-1'>Love your responsive layout</h1>
       <p>
         You can decorate your html tags with classes that hide/show elements only in certain formats.
       </p>
-      <p class='m-hidden t-hidden'>
+      <p class='m-hidden t-hidden background-primary-light p-1 rounded'>
         This is only visible in desktop.
       </p>
-      <p class='m-hidden t-visible hidden'>
+      <p class='t-visible hidden background-primary-light p-1 rounded'>
         This is only visible in tablet.
       </p>
-      <p class='m-visible t-hidden hidden'>
+      <p class='m-visible hidden background-primary-light p-1 rounded'>
         This is only visible in mobile.
       </p>
+
+      <p class='margin-top-2'>
+        In addition to visibility. Items can change size according to desktop/tablet/mobile formats.
+      </p>
+
+      <div class='row wrap margin-top-2'>
+        <div class='m-size-1-1 t-size-1-2 size-1-3 pad-right-1 m-pad-right-0'>
+          <p class='background-primary-light pad-1 rounded'>
+            This is 1/3 of its container in desktop (including padding).
+          </p>
+        </div>
+        <div class='m-size-1-1 t-size-1-2 size-1-3 m-pad-top-1 pad-right-1 m-pad-right-0'>
+          <p class='background-primary-light pad-1 rounded'>
+            And also it is 1/2 its container in tablet.
+          </p>
+        </div>
+        <div class='m-size-1-1 t-size-1-2 t-pad-top-1 m-pad-top-1 size-1-3 pad-right-1 m-pad-right-0'>
+          <p class='background-primary-light pad-1 rounded'>
+            Finally, in mobile it takes up the whole container width.
+          </p>
+        </div>
+      </div>
     </section>
   </div>
 
