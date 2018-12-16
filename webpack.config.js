@@ -15,7 +15,7 @@ let config = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader?includePaths[]=' + path.resolve(__dirname, "./node_modules/compass-mixins/lib")
+          'sass-loader',
         ]
       }
     ]
