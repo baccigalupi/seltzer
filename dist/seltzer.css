@@ -572,6 +572,9 @@ html {
 .size-stretch {
   flex-grow: 1; }
 
+.hidden {
+  display: none; }
+
 .pad-1,
 .p-1 {
   padding: 11px; }
@@ -1372,7 +1375,6 @@ footer, .footer {
   background-color: #ddfcf7; }
 
 .content {
-  background-color: #FFFFFF;
   padding: 11px;
   flex: 1; }
 
@@ -1381,4 +1383,16 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+
+@media screen and (max-width: 576px) {
+  .m-hidden {
+    display: none; }
+  .m-visible {
+    display: block; } }
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .t-hidden {
+    display: none; }
+  .t-visible {
+    display: block; } }
 
