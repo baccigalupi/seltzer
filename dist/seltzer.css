@@ -516,18 +516,14 @@ html {
   flex-direction: row; }
   .row.wrap {
     flex-wrap: wrap; }
-  .row.space-between {
-    justify-content: space-between; }
-  .row.space-around {
-    justify-content: space-around; }
   .row.center {
     justify-content: center; }
   .row.align-center {
     align-items: center; }
   .row.align-top {
-    align-items: flex-top; }
+    align-items: flex-start; }
   .row.align-bottom {
-    align-items: flex-bottom; }
+    align-items: flex-end; }
 
 .size-1-1 {
   min-width: 100%;
@@ -572,259 +568,308 @@ html {
 .size-stretch {
   flex-grow: 1; }
 
+.size-auto {
+  min-width: fit-content;
+  max-width: fit-content; }
+
 .hidden {
   display: none; }
 
-.pad-1,
-.p-1 {
+.pad-0 {
+  padding: 0px; }
+
+.pad-x-0 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.pad-y-0 {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.pad-top-0 {
+  padding-top: 0px; }
+
+.pad-bottom-0 {
+  padding-bottom: 0px; }
+
+.pad-left-0 {
+  padding-left: 0px; }
+
+.pad-right-0 {
+  padding-right: 0px; }
+
+.margin-0 {
+  margin: 0px; }
+
+.margin-y-0 {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.margin-top-0 {
+  margin-top: 0px; }
+
+.margin-bottom-0 {
+  margin-bottom: 0px; }
+
+.margin-x-0 {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.margin-left-0 {
+  margin-left: 0px; }
+
+.margin-right-0 {
+  margin-right: 0px; }
+
+.spacer-0 {
+  width: 0px;
+  height: 100%; }
+
+.pad-1 {
   padding: 11px; }
 
-.pad-x-1,
-.px-1 {
+.pad-x-1 {
   padding-left: 11px;
   padding-right: 11px; }
 
-.pad-y-1,
-.py-1 {
+.pad-y-1 {
   padding-top: 11px;
   padding-bottom: 11px; }
 
-.pad-top-1,
-.pt-1 {
+.pad-top-1 {
   padding-top: 11px; }
 
-.pad-bottom-1,
-.pb-1 {
+.pad-bottom-1 {
   padding-bottom: 11px; }
 
-.pad-left-1,
-.pl-1 {
+.pad-left-1 {
   padding-left: 11px; }
 
-.pad-right-1,
-.pr-1 {
+.pad-right-1 {
   padding-right: 11px; }
 
-.margin-1,
-.m-1 {
+.margin-1 {
   margin: 11px; }
 
-.margin-y-1,
-.my-1 {
+.margin-y-1 {
   margin-top: 11px;
   margin-bottom: 11px; }
 
-.margin-top-1,
-.mt-1 {
+.margin-top-1 {
   margin-top: 11px; }
 
-.margin-bottom-1,
-.mb-1 {
+.margin-bottom-1 {
   margin-bottom: 11px; }
+
+.margin-x-1 {
+  margin-left: 11px;
+  margin-right: 11px; }
+
+.margin-left-1 {
+  margin-left: 11px; }
+
+.margin-right-1 {
+  margin-right: 11px; }
 
 .spacer-1 {
   width: 11px;
   height: 100%; }
 
-.pad-2,
-.p-2 {
+.pad-2 {
   padding: 22px; }
 
-.pad-x-2,
-.px-2 {
+.pad-x-2 {
   padding-left: 22px;
   padding-right: 22px; }
 
-.pad-y-2,
-.py-2 {
+.pad-y-2 {
   padding-top: 22px;
   padding-bottom: 22px; }
 
-.pad-top-2,
-.pt-2 {
+.pad-top-2 {
   padding-top: 22px; }
 
-.pad-bottom-2,
-.pb-2 {
+.pad-bottom-2 {
   padding-bottom: 22px; }
 
-.pad-left-2,
-.pl-2 {
+.pad-left-2 {
   padding-left: 22px; }
 
-.pad-right-2,
-.pr-2 {
+.pad-right-2 {
   padding-right: 22px; }
 
-.margin-2,
-.m-2 {
+.margin-2 {
   margin: 22px; }
 
-.margin-y-2,
-.my-2 {
+.margin-y-2 {
   margin-top: 22px;
   margin-bottom: 22px; }
 
-.margin-top-2,
-.mt-2 {
+.margin-top-2 {
   margin-top: 22px; }
 
-.margin-bottom-2,
-.mb-2 {
+.margin-bottom-2 {
   margin-bottom: 22px; }
+
+.margin-x-2 {
+  margin-left: 22px;
+  margin-right: 22px; }
+
+.margin-left-2 {
+  margin-left: 22px; }
+
+.margin-right-2 {
+  margin-right: 22px; }
 
 .spacer-2 {
   width: 22px;
   height: 100%; }
 
-.pad-3,
-.p-3 {
+.pad-3 {
   padding: 33px; }
 
-.pad-x-3,
-.px-3 {
+.pad-x-3 {
   padding-left: 33px;
   padding-right: 33px; }
 
-.pad-y-3,
-.py-3 {
+.pad-y-3 {
   padding-top: 33px;
   padding-bottom: 33px; }
 
-.pad-top-3,
-.pt-3 {
+.pad-top-3 {
   padding-top: 33px; }
 
-.pad-bottom-3,
-.pb-3 {
+.pad-bottom-3 {
   padding-bottom: 33px; }
 
-.pad-left-3,
-.pl-3 {
+.pad-left-3 {
   padding-left: 33px; }
 
-.pad-right-3,
-.pr-3 {
+.pad-right-3 {
   padding-right: 33px; }
 
-.margin-3,
-.m-3 {
+.margin-3 {
   margin: 33px; }
 
-.margin-y-3,
-.my-3 {
+.margin-y-3 {
   margin-top: 33px;
   margin-bottom: 33px; }
 
-.margin-top-3,
-.mt-3 {
+.margin-top-3 {
   margin-top: 33px; }
 
-.margin-bottom-3,
-.mb-3 {
+.margin-bottom-3 {
   margin-bottom: 33px; }
+
+.margin-x-3 {
+  margin-left: 33px;
+  margin-right: 33px; }
+
+.margin-left-3 {
+  margin-left: 33px; }
+
+.margin-right-3 {
+  margin-right: 33px; }
 
 .spacer-3 {
   width: 33px;
   height: 100%; }
 
-.pad-4,
-.p-4 {
+.pad-4 {
   padding: 44px; }
 
-.pad-x-4,
-.px-4 {
+.pad-x-4 {
   padding-left: 44px;
   padding-right: 44px; }
 
-.pad-y-4,
-.py-4 {
+.pad-y-4 {
   padding-top: 44px;
   padding-bottom: 44px; }
 
-.pad-top-4,
-.pt-4 {
+.pad-top-4 {
   padding-top: 44px; }
 
-.pad-bottom-4,
-.pb-4 {
+.pad-bottom-4 {
   padding-bottom: 44px; }
 
-.pad-left-4,
-.pl-4 {
+.pad-left-4 {
   padding-left: 44px; }
 
-.pad-right-4,
-.pr-4 {
+.pad-right-4 {
   padding-right: 44px; }
 
-.margin-4,
-.m-4 {
+.margin-4 {
   margin: 44px; }
 
-.margin-y-4,
-.my-4 {
+.margin-y-4 {
   margin-top: 44px;
   margin-bottom: 44px; }
 
-.margin-top-4,
-.mt-4 {
+.margin-top-4 {
   margin-top: 44px; }
 
-.margin-bottom-4,
-.mb-4 {
+.margin-bottom-4 {
   margin-bottom: 44px; }
+
+.margin-x-4 {
+  margin-left: 44px;
+  margin-right: 44px; }
+
+.margin-left-4 {
+  margin-left: 44px; }
+
+.margin-right-4 {
+  margin-right: 44px; }
 
 .spacer-4 {
   width: 44px;
   height: 100%; }
 
-.pad-5,
-.p-5 {
+.pad-5 {
   padding: 55px; }
 
-.pad-x-5,
-.px-5 {
+.pad-x-5 {
   padding-left: 55px;
   padding-right: 55px; }
 
-.pad-y-5,
-.py-5 {
+.pad-y-5 {
   padding-top: 55px;
   padding-bottom: 55px; }
 
-.pad-top-5,
-.pt-5 {
+.pad-top-5 {
   padding-top: 55px; }
 
-.pad-bottom-5,
-.pb-5 {
+.pad-bottom-5 {
   padding-bottom: 55px; }
 
-.pad-left-5,
-.pl-5 {
+.pad-left-5 {
   padding-left: 55px; }
 
-.pad-right-5,
-.pr-5 {
+.pad-right-5 {
   padding-right: 55px; }
 
-.margin-5,
-.m-5 {
+.margin-5 {
   margin: 55px; }
 
-.margin-y-5,
-.my-5 {
+.margin-y-5 {
   margin-top: 55px;
   margin-bottom: 55px; }
 
-.margin-top-5,
-.mt-5 {
+.margin-top-5 {
   margin-top: 55px; }
 
-.margin-bottom-5,
-.mb-5 {
+.margin-bottom-5 {
   margin-bottom: 55px; }
+
+.margin-x-5 {
+  margin-left: 55px;
+  margin-right: 55px; }
+
+.margin-left-5 {
+  margin-left: 55px; }
+
+.margin-right-5 {
+  margin-right: 55px; }
 
 .spacer-5 {
   width: 55px;
@@ -1208,6 +1253,13 @@ button.neutral,
   .btn.btn-neutral.focus {
     background-color: #888c94; }
 
+fieldset,
+legend {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block; }
+
 label {
   display: block;
   padding-top: 11px;
@@ -1247,6 +1299,12 @@ input[type=range] {
   border: none;
   padding-left: 0;
   padding-right: 0; }
+
+input[type=radio].non-native,
+input[type=checkbox].non-native {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
 
 textarea {
   resize: vertical;
