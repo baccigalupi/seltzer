@@ -879,8 +879,7 @@ input[type=submit],
 input[type=reset],
 input[type=button],
 button,
-a.button,
-a.btn {
+a.button {
   display: inline-block;
   width: auto;
   border: none;
@@ -902,9 +901,7 @@ a.btn {
   button:enabled:hover,
   button:enabled.hover,
   a.button:enabled:hover,
-  a.button:enabled.hover,
-  a.btn:enabled:hover,
-  a.btn:enabled.hover {
+  a.button:enabled.hover {
     background-color: #4675b0; }
   input[type=submit]:active, input[type=submit].active,
   input[type=reset]:active,
@@ -914,9 +911,7 @@ a.btn {
   button:active,
   button.active,
   a.button:active,
-  a.button.active,
-  a.btn:active,
-  a.btn.active {
+  a.button.active {
     background-color: #315079;
     outline: none;
     box-shadow: 0 0 10px #2c7c82; }
@@ -928,9 +923,7 @@ a.btn {
   button:focus,
   button.focus,
   a.button:focus,
-  a.button.focus,
-  a.btn:focus,
-  a.btn.focus {
+  a.button.focus {
     outline: none;
     box-shadow: 0 0 10px #2c7c82; }
   input[type=submit][disabled], input[type=submit].disabled,
@@ -941,316 +934,154 @@ a.btn {
   button[disabled],
   button.disabled,
   a.button[disabled],
-  a.button.disabled,
-  a.btn[disabled],
-  a.btn.disabled {
+  a.button.disabled {
     cursor: not-allowed;
     opacity: 0.8; }
-  input[type=submit] .btn-secondary, input[type=submit].secondary,
-  input[type=reset] .btn-secondary,
+  input[type=submit].secondary,
   input[type=reset].secondary,
-  input[type=button] .btn-secondary,
   input[type=button].secondary,
-  button .btn-secondary,
   button.secondary,
-  a.button .btn-secondary,
-  a.button.secondary,
-  a.btn .btn-secondary,
-  a.btn.secondary {
+  a.button.secondary {
     background-color: #d9dadc;
     color: #111829; }
-    input[type=submit] .btn-secondary:enabled:hover, input[type=submit] .btn-secondary:enabled.hover, input[type=submit].secondary:enabled:hover, input[type=submit].secondary:enabled.hover,
-    input[type=reset] .btn-secondary:enabled:hover,
-    input[type=reset] .btn-secondary:enabled.hover,
+    input[type=submit].secondary:enabled:hover, input[type=submit].secondary:enabled.hover,
     input[type=reset].secondary:enabled:hover,
     input[type=reset].secondary:enabled.hover,
-    input[type=button] .btn-secondary:enabled:hover,
-    input[type=button] .btn-secondary:enabled.hover,
     input[type=button].secondary:enabled:hover,
     input[type=button].secondary:enabled.hover,
-    button .btn-secondary:enabled:hover,
-    button .btn-secondary:enabled.hover,
     button.secondary:enabled:hover,
     button.secondary:enabled.hover,
-    a.button .btn-secondary:enabled:hover,
-    a.button .btn-secondary:enabled.hover,
     a.button.secondary:enabled:hover,
-    a.button.secondary:enabled.hover,
-    a.btn .btn-secondary:enabled:hover,
-    a.btn .btn-secondary:enabled.hover,
-    a.btn.secondary:enabled:hover,
-    a.btn.secondary:enabled.hover {
+    a.button.secondary:enabled.hover {
       background-color: #e6e7e9; }
-    input[type=submit] .btn-secondary:focus, input[type=submit] .btn-secondary.focus, input[type=submit].secondary:focus, input[type=submit].secondary.focus,
-    input[type=reset] .btn-secondary:focus,
-    input[type=reset] .btn-secondary.focus,
+    input[type=submit].secondary:focus, input[type=submit].secondary.focus,
     input[type=reset].secondary:focus,
     input[type=reset].secondary.focus,
-    input[type=button] .btn-secondary:focus,
-    input[type=button] .btn-secondary.focus,
     input[type=button].secondary:focus,
     input[type=button].secondary.focus,
-    button .btn-secondary:focus,
-    button .btn-secondary.focus,
     button.secondary:focus,
     button.secondary.focus,
-    a.button .btn-secondary:focus,
-    a.button .btn-secondary.focus,
     a.button.secondary:focus,
-    a.button.secondary.focus,
-    a.btn .btn-secondary:focus,
-    a.btn .btn-secondary.focus,
-    a.btn.secondary:focus,
-    a.btn.secondary.focus {
+    a.button.secondary.focus {
       background-color: #f3f4f5; }
-  input[type=submit] .btn-info, input[type=submit].info,
-  input[type=reset] .btn-info,
+  input[type=submit].info,
   input[type=reset].info,
-  input[type=button] .btn-info,
   input[type=button].info,
-  button .btn-info,
   button.info,
-  a.button .btn-info,
-  a.button.info,
-  a.btn .btn-info,
-  a.btn.info {
+  a.button.info {
     background-color: #39A0A8;
     color: #111829; }
-    input[type=submit] .btn-info:enabled:hover, input[type=submit] .btn-info:enabled.hover, input[type=submit].info:enabled:hover, input[type=submit].info:enabled.hover,
-    input[type=reset] .btn-info:enabled:hover,
-    input[type=reset] .btn-info:enabled.hover,
+    input[type=submit].info:enabled:hover, input[type=submit].info:enabled.hover,
     input[type=reset].info:enabled:hover,
     input[type=reset].info:enabled.hover,
-    input[type=button] .btn-info:enabled:hover,
-    input[type=button] .btn-info:enabled.hover,
     input[type=button].info:enabled:hover,
     input[type=button].info:enabled.hover,
-    button .btn-info:enabled:hover,
-    button .btn-info:enabled.hover,
     button.info:enabled:hover,
     button.info:enabled.hover,
-    a.button .btn-info:enabled:hover,
-    a.button .btn-info:enabled.hover,
     a.button.info:enabled:hover,
-    a.button.info:enabled.hover,
-    a.btn .btn-info:enabled:hover,
-    a.btn .btn-info:enabled.hover,
-    a.btn.info:enabled:hover,
-    a.btn.info:enabled.hover {
+    a.button.info:enabled.hover {
       background-color: #3fb2bb; }
-    input[type=submit] .btn-info:focus, input[type=submit] .btn-info.focus, input[type=submit].info:focus, input[type=submit].info.focus,
-    input[type=reset] .btn-info:focus,
-    input[type=reset] .btn-info.focus,
+    input[type=submit].info:focus, input[type=submit].info.focus,
     input[type=reset].info:focus,
     input[type=reset].info.focus,
-    input[type=button] .btn-info:focus,
-    input[type=button] .btn-info.focus,
     input[type=button].info:focus,
     input[type=button].info.focus,
-    button .btn-info:focus,
-    button .btn-info.focus,
     button.info:focus,
     button.info.focus,
-    a.button .btn-info:focus,
-    a.button .btn-info.focus,
     a.button.info:focus,
-    a.button.info.focus,
-    a.btn .btn-info:focus,
-    a.btn .btn-info.focus,
-    a.btn.info:focus,
-    a.btn.info.focus {
+    a.button.info.focus {
       background-color: #50bbc4; }
-  input[type=submit] .btn-success, input[type=submit].success,
-  input[type=reset] .btn-success,
+  input[type=submit].success,
   input[type=reset].success,
-  input[type=button] .btn-success,
   input[type=button].success,
-  button .btn-success,
   button.success,
-  a.button .btn-success,
-  a.button.success,
-  a.btn .btn-success,
-  a.btn.success {
+  a.button.success {
     background-color: #3da344;
     color: #111829; }
-    input[type=submit] .btn-success:enabled:hover, input[type=submit] .btn-success.hover, input[type=submit].success:enabled:hover, input[type=submit].success.hover,
-    input[type=reset] .btn-success:enabled:hover,
-    input[type=reset] .btn-success.hover,
+    input[type=submit].success:enabled:hover, input[type=submit].success.hover,
     input[type=reset].success:enabled:hover,
     input[type=reset].success.hover,
-    input[type=button] .btn-success:enabled:hover,
-    input[type=button] .btn-success.hover,
     input[type=button].success:enabled:hover,
     input[type=button].success.hover,
-    button .btn-success:enabled:hover,
-    button .btn-success.hover,
     button.success:enabled:hover,
     button.success.hover,
-    a.button .btn-success:enabled:hover,
-    a.button .btn-success.hover,
     a.button.success:enabled:hover,
-    a.button.success.hover,
-    a.btn .btn-success:enabled:hover,
-    a.btn .btn-success.hover,
-    a.btn.success:enabled:hover,
-    a.btn.success.hover {
+    a.button.success.hover {
       background-color: #44b64c; }
-    input[type=submit] .btn-success:enabled:focus, input[type=submit] .btn-success.focus, input[type=submit].success:enabled:focus, input[type=submit].success.focus,
-    input[type=reset] .btn-success:enabled:focus,
-    input[type=reset] .btn-success.focus,
+    input[type=submit].success:enabled:focus, input[type=submit].success.focus,
     input[type=reset].success:enabled:focus,
     input[type=reset].success.focus,
-    input[type=button] .btn-success:enabled:focus,
-    input[type=button] .btn-success.focus,
     input[type=button].success:enabled:focus,
     input[type=button].success.focus,
-    button .btn-success:enabled:focus,
-    button .btn-success.focus,
     button.success:enabled:focus,
     button.success.focus,
-    a.button .btn-success:enabled:focus,
-    a.button .btn-success.focus,
     a.button.success:enabled:focus,
-    a.button.success.focus,
-    a.btn .btn-success:enabled:focus,
-    a.btn .btn-success.focus,
-    a.btn.success:enabled:focus,
-    a.btn.success.focus {
+    a.button.success.focus {
       background-color: #54bf5b; }
-  input[type=submit] .btn-warning, input[type=submit].warning,
-  input[type=reset] .btn-warning,
+  input[type=submit].warning,
   input[type=reset].warning,
-  input[type=button] .btn-warning,
   input[type=button].warning,
-  button .btn-warning,
   button.warning,
-  a.button .btn-warning,
-  a.button.warning,
-  a.btn .btn-warning,
-  a.btn.warning {
+  a.button.warning {
     background-color: #FF9F1C;
     color: #111829; }
-    input[type=submit] .btn-warning:enabled:hover, input[type=submit] .btn-warning:enabled.hover, input[type=submit].warning:enabled:hover, input[type=submit].warning:enabled.hover,
-    input[type=reset] .btn-warning:enabled:hover,
-    input[type=reset] .btn-warning:enabled.hover,
+    input[type=submit].warning:enabled:hover, input[type=submit].warning:enabled.hover,
     input[type=reset].warning:enabled:hover,
     input[type=reset].warning:enabled.hover,
-    input[type=button] .btn-warning:enabled:hover,
-    input[type=button] .btn-warning:enabled.hover,
     input[type=button].warning:enabled:hover,
     input[type=button].warning:enabled.hover,
-    button .btn-warning:enabled:hover,
-    button .btn-warning:enabled.hover,
     button.warning:enabled:hover,
     button.warning:enabled.hover,
-    a.button .btn-warning:enabled:hover,
-    a.button .btn-warning:enabled.hover,
     a.button.warning:enabled:hover,
-    a.button.warning:enabled.hover,
-    a.btn .btn-warning:enabled:hover,
-    a.btn .btn-warning:enabled.hover,
-    a.btn.warning:enabled:hover,
-    a.btn.warning:enabled.hover {
+    a.button.warning:enabled.hover {
       background-color: #ffaa36; }
-    input[type=submit] .btn-warning:focus, input[type=submit] .btn-warning.focus, input[type=submit].warning:focus, input[type=submit].warning.focus,
-    input[type=reset] .btn-warning:focus,
-    input[type=reset] .btn-warning.focus,
+    input[type=submit].warning:focus, input[type=submit].warning.focus,
     input[type=reset].warning:focus,
     input[type=reset].warning.focus,
-    input[type=button] .btn-warning:focus,
-    input[type=button] .btn-warning.focus,
     input[type=button].warning:focus,
     input[type=button].warning.focus,
-    button .btn-warning:focus,
-    button .btn-warning.focus,
     button.warning:focus,
     button.warning.focus,
-    a.button .btn-warning:focus,
-    a.button .btn-warning.focus,
     a.button.warning:focus,
-    a.button.warning.focus,
-    a.btn .btn-warning:focus,
-    a.btn .btn-warning.focus,
-    a.btn.warning:focus,
-    a.btn.warning.focus {
+    a.button.warning.focus {
       background-color: #ffb54f; }
-  input[type=submit] .btn-danger, input[type=submit].danger,
-  input[type=reset] .btn-danger,
+  input[type=submit].danger,
   input[type=reset].danger,
-  input[type=button] .btn-danger,
   input[type=button].danger,
-  button .btn-danger,
   button.danger,
-  a.button .btn-danger,
-  a.button.danger,
-  a.btn .btn-danger,
-  a.btn.danger {
+  a.button.danger {
     background-color: #C66643;
     color: #111829; }
-    input[type=submit] .btn-danger:enabled:hover, input[type=submit] .btn-danger:enabled.hover, input[type=submit].danger:enabled:hover, input[type=submit].danger:enabled.hover,
-    input[type=reset] .btn-danger:enabled:hover,
-    input[type=reset] .btn-danger:enabled.hover,
+    input[type=submit].danger:enabled:hover, input[type=submit].danger:enabled.hover,
     input[type=reset].danger:enabled:hover,
     input[type=reset].danger:enabled.hover,
-    input[type=button] .btn-danger:enabled:hover,
-    input[type=button] .btn-danger:enabled.hover,
     input[type=button].danger:enabled:hover,
     input[type=button].danger:enabled.hover,
-    button .btn-danger:enabled:hover,
-    button .btn-danger:enabled.hover,
     button.danger:enabled:hover,
     button.danger:enabled.hover,
-    a.button .btn-danger:enabled:hover,
-    a.button .btn-danger:enabled.hover,
     a.button.danger:enabled:hover,
-    a.button.danger:enabled.hover,
-    a.btn .btn-danger:enabled:hover,
-    a.btn .btn-danger:enabled.hover,
-    a.btn.danger:enabled:hover,
-    a.btn.danger:enabled.hover {
+    a.button.danger:enabled.hover {
       background-color: #cc7657; }
-    input[type=submit] .btn-danger:focus, input[type=submit] .btn-danger.focus, input[type=submit].danger:focus, input[type=submit].danger.focus,
-    input[type=reset] .btn-danger:focus,
-    input[type=reset] .btn-danger.focus,
+    input[type=submit].danger:focus, input[type=submit].danger.focus,
     input[type=reset].danger:focus,
     input[type=reset].danger.focus,
-    input[type=button] .btn-danger:focus,
-    input[type=button] .btn-danger.focus,
     input[type=button].danger:focus,
     input[type=button].danger.focus,
-    button .btn-danger:focus,
-    button .btn-danger.focus,
     button.danger:focus,
     button.danger.focus,
-    a.button .btn-danger:focus,
-    a.button .btn-danger.focus,
     a.button.danger:focus,
-    a.button.danger.focus,
-    a.btn .btn-danger:focus,
-    a.btn .btn-danger.focus,
-    a.btn.danger:focus,
-    a.btn.danger.focus {
+    a.button.danger.focus {
       background-color: #d2866a; }
 
 input[type=reset],
-button.neutral,
-.btn.neutral,
-.btn.btn-neutral {
+button.neutral {
   background-color: #70747f;
   width: auto; }
   input[type=reset]:enabled:hover, input[type=reset]:enabled.hover, input[type=reset]:focus, input[type=reset].focus,
   button.neutral:enabled:hover,
   button.neutral:enabled.hover,
   button.neutral:focus,
-  button.neutral.focus,
-  .btn.neutral:enabled:hover,
-  .btn.neutral:enabled.hover,
-  .btn.neutral:focus,
-  .btn.neutral.focus,
-  .btn.btn-neutral:enabled:hover,
-  .btn.btn-neutral:enabled.hover,
-  .btn.btn-neutral:focus,
-  .btn.btn-neutral.focus {
+  button.neutral.focus {
     background-color: #888c94; }
 
 fieldset,

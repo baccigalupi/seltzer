@@ -2,8 +2,7 @@ input[type=submit],
 input[type=reset],
 input[type=button],
 button,
-a.button,
-a.btn {
+a.button {
   display: inline-block;
   width: auto;
   border: none;
@@ -42,7 +41,6 @@ a.btn {
     opacity: 0.8;
   }
 
-  .btn-secondary,
   &.secondary {
     background-color: $secondary-light;
     color: $darkest-color;
@@ -58,7 +56,6 @@ a.btn {
     }
   }
 
-  .btn-info,
   &.info {
     background-color: $info;
     color: $darkest-color;
@@ -74,7 +71,6 @@ a.btn {
     }
   }
 
-  .btn-success,
   &.success {
     background-color: $success;
     color: $darkest-color;
@@ -90,7 +86,6 @@ a.btn {
     }
   }
 
-  .btn-warning,
   &.warning {
     background-color: $warning;
     color: $darkest-color;
@@ -106,7 +101,6 @@ a.btn {
     }
   }
 
-  .btn-danger,
   &.danger {
     background-color: $danger;
     color: $darkest-color;
@@ -124,9 +118,7 @@ a.btn {
 }
 
 input[type=reset],
-button.neutral,
-.btn.neutral,
-.btn.btn-neutral {
+button.neutral {
   background-color: $neutral-60;
   width: auto;
 
