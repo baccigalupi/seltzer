@@ -1,3 +1,12 @@
+// fieldset still doesn't act like a flex box :(
+fieldset,
+legend {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
 label {
   display: block;
   padding-top: $spacing;
@@ -40,6 +49,13 @@ input[type=range] {
   border: none;
   padding-left: 0;
   padding-right: 0;
+}
+
+input[type=radio].non-native,
+input[type=checkbox].non-native {
+ position: absolute;
+ top: -9999px;
+ left: -9999px;
 }
 
 textarea {
