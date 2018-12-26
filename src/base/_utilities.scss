@@ -16,6 +16,23 @@
 }
 
 
+.float {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: block;
+}
+
 .absolute {
   position: absolute;
 }
@@ -33,14 +50,23 @@
   border-radius: $border-radius;
 }
 
+.rounded-top {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
 .circular {
   border-radius: 50%;
 }
 
-
-//.shadow {
-  //@include shadowed;
-//}
+.shadow {
+  @include background-shadow($neutral-60);
+}
 
 .transparent {
   opacity: 0;
@@ -79,6 +105,10 @@
 
 
 // text styles
+.centered {
+  text-align: center;
+}
+
 .wrap-text {
   word-break: break-all;
 }
@@ -87,13 +117,6 @@
   white-space: nowrap;
 }
 
-/* 
 .text-shadow {
-  @include text-shadowed;
+  @include text-shadow($darkest-color);
 }
-
-.text-shadow-light {
-  @include text-shadowed-light;
-}
-*/
-

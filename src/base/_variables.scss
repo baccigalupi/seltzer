@@ -134,3 +134,18 @@ $focus-width: 10px;
   border-color: $base-color;
 }
 
+@mixin background-shadow($base-color) {
+  box-shadow: $spacing $spacing $spacing $base-color;
+}
+
+@mixin button-shadow($base-color) {
+  box-shadow: $border-width $border-width $border-width transparentize($base-color, 0.1);
+}
+
+@mixin embossed-button-shadow($base-color) {
+  box-shadow: inset $border-width $border-width $border-width transparentize($base-color, 0.1);
+}
+
+@mixin text-shadow($base-color) {
+  text-shadow: $border-width $border-width $spacing transparentize($base-color, 0.1);
+}

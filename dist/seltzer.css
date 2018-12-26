@@ -1181,6 +1181,19 @@ label.error,
 .no-scroll {
   overflow: hidden; }
 
+.float {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.block {
+  display: block; }
+
 .absolute {
   position: absolute; }
 
@@ -1193,8 +1206,19 @@ label.error,
 .rounded {
   border-radius: 6px; }
 
+.rounded-top {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+
+.rounded-bottom {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; }
+
 .circular {
   border-radius: 50%; }
+
+.shadow {
+  box-shadow: 11px 11px 11px #70747f; }
 
 .transparent {
   opacity: 0; }
@@ -1223,21 +1247,18 @@ label.error,
 .no-border {
   border: none; }
 
+.centered {
+  text-align: center; }
+
 .wrap-text {
   word-break: break-all; }
 
 .no-wrap-text {
   white-space: nowrap; }
 
-/* 
 .text-shadow {
-  @include text-shadowed;
-}
+  text-shadow: 1px 1px 11px rgba(17, 24, 41, 0.9); }
 
-.text-shadow-light {
-  @include text-shadowed-light;
-}
-*/
 html {
   background-color: #FFFFFF;
   display: grid;

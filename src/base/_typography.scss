@@ -61,8 +61,8 @@ hr {
   margin-top: 1 * $spacing;
   margin-bottom: 1 * $spacing;
   border: 0;
-  background-color: $neutral-20;
-  height: 1px;
+  background-color: $border-color;
+  height: $border-width;
 }
 
 b,
